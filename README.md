@@ -7,6 +7,6 @@ don't need any gym equipment as I have included mostly calestenics exercises but
 3-Proper Warmpu Exercises (COMING SOON)  
 4-Progress Viewer - You can save your progress photos to check your progress (COMING SOON)  
 ## PHOTOS OF UI
-will be updated soon
+![Screenshot_2022_0404_221905](https://user-images.githubusercontent.com/33715591/161594821-0f2c4e61-b104-47ad-b33a-369683cd9a19.jpg)
 ## VIDEO OF APP
 Will be updated soon
