@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2438"
+    tools:context=".ExerciseDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="117dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details_Ename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="BULGARINA SPLIT SQUATS"
+                android:textColor="#DBD8E3"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Video_player"
+                app:showSeekBar="true"
+                app:showVideoDuration="true"
+                app:autoPlay="false"/>
+
+            <TextView
+                android:id="@+id/exerciseDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="The Chief of Defence Staff of the Indian Armed Forces (CDS) is the military head and chairman of the Chiefs of Staff Committee of the Indian Armed Forces 26 KB (2,218 words) - 20:43, 9 December 2021 CDS CDS, CDs, Cds, etc. may refer to: Certificate of deposit (CDs) Counterfeit Deterrence System, developed by the Central Bank Counterfeit Deterrence Group 4 KB (580 words) - 14:26, 27 November 2021 National War Memorial (India) where the Prime Minister of India in the presence of Chief of Defence Staff (CDS) of India, and the three Chief of Staffs of the Indian Armed Forces, 27 KB (2,564 words) - 14:17, 7 November 2021 General (India) the appointment of General Bipin Rawat as the first CDS, there were two serving full generals for the first time in Independent India. The only serving 7 KB (665 words) - 16:12, 9 December 2021 Bipin Rawat (category Alumni of the National Defence College, India) military officer who was a four-star general of the Indian Army. He served as the first Chief of Defence Staff (CDS) of the Indian Armed Forces from January 2020 56 KB (3,405 words) - 02:38, 10 December 2021 Martyrs' Day (India) President, the Vice President, the Prime Minister, the Defence Minister, the CDS of India and the three Service Chiefs gather at the samadhi at Raj Ghat memorial 7 KB (609 words) - 11:04, 2 October 2021 Admiral (India) Chief of the Naval Staff (CNS), the professional head of the Indian Navy, since 1968. The rank may also be held by the Chief of Defence Staff (CDS) if the 6 KB (573 words) - 16:14, 8 December 2021 Combined Defence Services Examination (category Standardised tests in India) Services Examination (abbreviated as CDS Exam) is conducted by the Union Public Service Commission for recruitment of Commissioned Officers in the Indian 8 KB (613 words) - 02:11, 22 November 2021 List of Rajputs war hero of the Indo-Pakistani War of 1947, was awarded Maha Vir Chakra. General Bipin Rawat, current Chief of Defence Staff (CDS) of India and former 50 KB (4,081 words) - 16:31, 30 November 2021 Labour India multimedia CDs and DVDs, and general knowledge books and CDs including Quiz India series and English and Hindi grammar guides. Labour India has other establishments 5 KB (344 words) - 16:27, 5 December 2021 ABN Andhra Jyothi (category 24-hour television news channels in India) List of Telugu-language television channels Andhra Jyothi Epaper K.V. Ramana (26 December 2009). &quot;86-yr-old Andhra governor targeted in sleaze CDs&quot;. DNA 4 KB (300 words) - 16:10, 19 October 2021 Air Defence Command (India) CDS, headed by 3-star IAF officer&quot;. Business Standard India. Retrieved 17 February 2020. &quot;CDS aims to set up Air Defence Command by June 2020&quot;. India 3 KB (294 words) - 10:25, 23 October 2021 Kerala (redirect from Kerala, India) Coast of India. It was formed on 1 November 1956, following the passage of the States Reorganisation Act, by combining Malayalam-speaking regions of the 352 KB (33,559 words) - 02:25, 2 December 2021 Army ranks and insignia of India the British Indian Army. After 26 January 1950, when India became a republic, the President of India became Commander-in-Chief, and the Ashoka Lion replaced 30 KB (2,364 words) - 16:44, 9 December 2021 Field marshal (India) as the Chief of the Defence Staff (CDS). This appointment was dropped after several objections from the bureaucracy and the commanders of the navy and 17 KB (1,756 words) - 16:13, 8 December 2021 Indian Air Force (redirect from Air Force of India) auxiliary air force of the British Empire which honoured India's aviation service during World War II with the prefix Royal. After India gained independence 165 KB (14,743 words) - 13:39, 8 December 2021 Popular Front of India India Today&quot;. India Today. Retrieved 12 May 2011. &quot;Defending the front&quot;. The Indian Express. 28 July 2010. Retrieved 12 May 2011. &quot;Police unearth CDs 64 KB (5,348 words) - 08:33, 5 December 2021 Economic impact of the COVID-19 pandemic in India (10 May 2020). &quot;CDS Bipin Rawat: Forces must shun imports, go for 'Make In India', says Gen Bipin Rawat | India News&quot;. The Times of India. Retrieved 10 177 KB (17,347 words) - 04:34, 8 December 2021 Indian Navy (redirect from Navy of India) is the naval branch of the Indian Armed Forces. The President of India is the Supreme Commander of the Indian Navy. The Chief of Naval Staff, a four-star 191 KB (15,189 words) - 12:44, 9 December 2021 Indian Army United Nations peacekeeping missions (category India and the United Nations) and uncertain due to the presence of other armed groups. The current CDS of India, Bipin Rawat once commanded a MONUSCO brigade. (c) Sudan and South Sudan 15 KB (1,801 words) - 01:20, 18 September 2021 "
+                android:textColor="#DBD8E3"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

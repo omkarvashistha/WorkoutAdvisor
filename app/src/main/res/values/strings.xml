@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WorkoutAdvisor</string>
+    <string name="please_choose_any_workout">CHOOSE YOUR WORKOUT</string>
+    <string name="get_workout">GET WORKOUT</string>
+    <string name="todo">TODO</string>
+    <string name="view_all_workouts">View All Workouts</string>
+    <string name="change_workout">Change Workout</string>
+    <string name="register_workout">Register Workout</string>
+    <string name="Admin_intro">HY PERSON WELCOME\nPLEASE CHOOSE ANY OPTION BELOW</string>
+
+    <style name="Database_name">WorkoutAdvisor</style>
+
+    <string-array name="workouts">
+        <item>Push</item>
+        <item>Pull</item>
+        <item>Legs</item>
+        <item>Biceps</item>
+        <item>Triceps</item>
+        <item>Shoulders</item>
+        <item>Chest</item>
+        <item>Abs/Core</item>
+        <item>Arms</item>
+        <item>Back</item>
+
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
