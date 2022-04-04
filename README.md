@@ -8,5 +8,5 @@ don't need any gym equipment as I have included mostly calestenics exercises but
 4-Progress Viewer - You can save your progress photos to check your progress (COMING SOON)  
 ## PHOTOS OF UI
 will be updated soon
-## VIDEOS OF APP
+## VIDEO OF APP
 Will be updated soon
