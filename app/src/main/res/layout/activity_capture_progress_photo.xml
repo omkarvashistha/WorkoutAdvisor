@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaptureProgressPhoto">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="764dp"
+        android:background="@drawable/spinner_bg_2"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="28dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Click Photo"
+            android:textColor="#090909"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/accept_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/correct"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/reject_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/wrong"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/progress_captured_pic"
+        android:layout_width="358dp"
+        android:layout_height="426dp"
+        android:visibility="visible"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:src="@drawable/wallet"/>
+<!--        tools:srcCompat="@drawable/wallet" />-->
+
+    <Button
+        android:id="@+id/clickPhoto"
+        android:layout_width="239dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/floating_button_bg"
+        android:text="Click Photo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/progress_captured_pic"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/progress_captured_pic"
+        app:layout_constraintTop_toBottomOf="@+id/progress_captured_pic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

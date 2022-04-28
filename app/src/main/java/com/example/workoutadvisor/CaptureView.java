@@ -18,7 +18,7 @@ public class CaptureView extends AppCompatActivity {
         capturePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ViewProgress.class));
+                startActivity(new Intent(getApplicationContext(),CaptureProgressPhoto.class));
                 overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             }
         });

@@ -22,16 +22,6 @@ public class UserHome2 extends AppCompatActivity {
         setContentView(R.layout.activity_user_home2);
         startText = findViewById(R.id.start_text);
 
-        try{
-            String DbName = String.valueOf(R.style.Database_name);
-            SqlDbHelper sqlDbHelper = new SqlDbHelper(getApplicationContext(),DbName,null,1);
-            SQLiteDatabase database = sqlDbHelper.getReadableDatabase();
-
-            Toast.makeText(getApplicationContext(), "INSERTED", Toast.LENGTH_SHORT).show();
-        }
-        catch(Exception e){
-            Toast.makeText(getApplicationContext(), e.getMessage().toString(), Toast.LENGTH_SHORT).show();
-        }
 
 
 //        Intent intent = getIntent();

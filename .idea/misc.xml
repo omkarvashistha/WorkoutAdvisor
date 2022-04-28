@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/drawable/back_button.xml" value="0.18194444444444444" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/drawable/backgroundcrop.xml" value="0.18194444444444444" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/drawable/buttonbg.xml" value="0.18194444444444444" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/drawable/delete_photo.xml" value="0.18194444444444444" />
@@ -23,6 +24,8 @@
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_add_workouts.xml" value="0.152" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_admin_view.xml" value="0.1686746987951807" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_admin_view_workout.xml" value="0.12568306010928962" />
+        <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_capture_photo.xml" value="0.1687158469945355" />
+        <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_capture_progress_photo.xml" value="0.16495901639344263" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_capture_view.xml" value="0.13831967213114754" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_exercise_details.xml" value="0.16393442622950818" />
         <entry key="..\:/My Apps/WorkoutAdvisor/app/src/main/res/layout/activity_login.xml" value="0.176" />
