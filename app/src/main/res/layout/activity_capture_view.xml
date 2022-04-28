@@ -39,6 +39,7 @@
 
             <!-- FIRST VIEW HERE   -->
             <LinearLayout
+                android:id="@+id/capture_photo_view"
                 android:layout_marginTop="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -141,6 +142,7 @@
 
 <!--                              SECOND VIEW                               -->
             <LinearLayout
+                android:id="@+id/view_progress_screen"
                 android:layout_marginTop="15dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

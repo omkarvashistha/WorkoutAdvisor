@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="10dp"
-                    android:text="Hi Omkar"
+                    android:text="Hi"
                     android:fontFamily="@font/helvetica"
                     android:textColor="#DBD8E3"
                     android:textSize="25sp" />

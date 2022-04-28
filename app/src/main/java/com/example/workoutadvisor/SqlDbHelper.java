@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.example.workoutadvisor.data.WorkoutContract;
+
 public class SqlDbHelper extends SQLiteOpenHelper {
     private  SQLiteDatabase database;
     private SqlDbHelper sqlDbHelper;
@@ -19,7 +21,11 @@ public class SqlDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        String SQL_CREATE_PROGRESS_TABLE = "CREATE TABLE "+ WorkoutContract.ProgressEntry.TABLE_NAME+"("
+                + WorkoutContract.ProgressEntry._ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "
+                +WorkoutContract.ProgressEntry.COLUMN_PHOTO+" BLOB, "
+                +WorkoutContract.ProgressEntry.COLUMN_PHOTO_DATE+" TEXT);";
+        db.execSQL(SQL_CREATE_PROGRESS_TABLE);
     }
 
     @Override

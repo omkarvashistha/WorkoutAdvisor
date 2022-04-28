@@ -7,10 +7,12 @@ import androidx.loader.app.LoaderManager;
 import androidx.loader.content.CursorLoader;
 import androidx.loader.content.Loader;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,18 +27,32 @@ public class ViewProgress extends AppCompatActivity implements LoaderManager.Loa
     private static final int PHOTO_LOADER = 0;
 
     PhotoCursorAdapter mCursorAdapter;
-
+    Button clickPhoto;
     TextView textView;
     ListView photoList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_progress);
         photoList = findViewById(R.id.list);
+        clickPhoto = findViewById(R.id.uploadButton);
+
+
         mCursorAdapter = new PhotoCursorAdapter(this,null);
         View emptyView = findViewById(R.id.empty_view);
         photoList.setEmptyView(emptyView);
         photoList.setAdapter(mCursorAdapter);
+
+        //--------------------CLICK PHOTO BUTTON----------------------------------------------------
+        clickPhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ViewProgress.this,CaptureView.class));
+            }
+        });
+        //------------------------------------------------------------------------------------------
+
         LoaderManager.getInstance(this).initLoader(PHOTO_LOADER,null,this);
     }
 
