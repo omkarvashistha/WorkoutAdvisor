@@ -7,6 +7,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -16,11 +17,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.workoutadvisor.data.WorkoutContract;
 import com.example.workoutadvisor.data.WorkoutProvider;
 
 import java.io.ByteArrayOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class CaptureProgressPhoto extends AppCompatActivity {
 
@@ -97,19 +100,33 @@ public class CaptureProgressPhoto extends AppCompatActivity {
     public void sendPhoto(){
 //-----------------------------CONVERTING BITMAP TO BYTE ARRAY -------------------------------------
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        photo.compress(Bitmap.CompressFormat.PNG,100,stream);
+        photo.compress(Bitmap.CompressFormat.JPEG,0,stream);
         byte[] imageBytes = stream.toByteArray();
         photo.recycle();
 //------------------------------GETTING CURRENT DATE------------------------------------------------
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy 'at' HH:mm");
-
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM,yyyy");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("IST"));
         Date date = new Date(System.currentTimeMillis());
-        String currDate = date.toString();
+        String currDate = dateFormat.format(date);
 
+
+        Log.d("test", currDate);
 
         ContentValues values = new ContentValues();
+        values.put(WorkoutContract.ProgressEntry.COLUMN_PHOTO,imageBytes);
+        values.put(WorkoutContract.ProgressEntry.COLUMN_PHOTO_DATE,currDate);
 
-        return;
+        Uri uri = getContentResolver().insert(WorkoutContract.ProgressEntry.CONTENT_URI,values);
+
+        if(uri==null){
+            Toast.makeText(getApplicationContext(), "Sorry Photo cannot be inserted", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(getApplicationContext(), "Photo inserted Successfully", Toast.LENGTH_SHORT).show();
+            finish();
+            startActivity(getIntent());
+        }
+
     }
 
 }
