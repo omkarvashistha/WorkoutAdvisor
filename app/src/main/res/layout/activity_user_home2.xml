@@ -325,7 +325,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/helvetica"
                             android:padding="5dp"
-                            android:text="Capture Your Progress"
+                            android:text="Capture / View Progress"
                             android:textColor="#2A2438"
                             android:textSize="20sp"
                             android:textStyle="bold" />

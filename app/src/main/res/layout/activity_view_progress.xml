@@ -2,15 +2,52 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#352F44"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ViewProgress">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/spinner_bg_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".9"
+            android:text="Your Progress"
+            android:textColor="#090909"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".88"
         android:layout_margin="5dp"
+        app:layout_constraintVertical_bias="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -19,16 +56,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="5dp">
-
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp">
 
                 <ListView
                     android:id="@+id/list"
                     android:layout_width="wrap_content"
                     android:layout_height="821dp"
-                    android:dividerHeight="2dp"
+                    android:dividerHeight="5dp"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_marginBottom="5dp"
                     android:divider="@android:color/transparent"
-                    android:nestedScrollingEnabled="true">
+                    tools:targetApi="lollipop">
 
                 </ListView>
 

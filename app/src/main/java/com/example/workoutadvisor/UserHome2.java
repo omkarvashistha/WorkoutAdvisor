@@ -23,6 +23,18 @@ public class UserHome2 extends AppCompatActivity {
         startText = findViewById(R.id.start_text);
 
 
+//        try{
+//            String DbName = String.valueOf(R.style.Database_name);
+//            SqlDbHelper helper = new SqlDbHelper(getApplicationContext(),DbName,null,1);
+//            SQLiteDatabase database = helper.getWritableDatabase();
+//            String query = "DELETE FROM "+ WorkoutContract.ProgressEntry.TABLE_NAME+";";
+//            database.execSQL(query);
+//            Toast.makeText(getApplicationContext(), "dataCleared", Toast.LENGTH_SHORT).show();
+//        }
+//        catch(Exception e){
+//            Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+//        }
+
 
 //        Intent intent = getIntent();
 //        String Username = intent.getStringExtra("Name");

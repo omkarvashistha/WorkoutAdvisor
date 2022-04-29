@@ -29,7 +29,7 @@ public class CaptureProgressPhoto extends AppCompatActivity {
 
     Button takePhoto;
     ImageView userPhoto;
-    ImageButton correct,wrong;
+    ImageButton correct;
     Bitmap photo;
 
     WorkoutProvider provider;
@@ -44,7 +44,6 @@ public class CaptureProgressPhoto extends AppCompatActivity {
         takePhoto = findViewById(R.id.clickPhoto);
         userPhoto = findViewById(R.id.progress_captured_pic);
         correct = findViewById(R.id.accept_photo);
-        wrong = findViewById(R.id.reject_photo);
         count = 0;
 
         if(!hasCamera()){
@@ -100,7 +99,7 @@ public class CaptureProgressPhoto extends AppCompatActivity {
     public void sendPhoto(){
 //-----------------------------CONVERTING BITMAP TO BYTE ARRAY -------------------------------------
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        photo.compress(Bitmap.CompressFormat.JPEG,0,stream);
+        photo.compress(Bitmap.CompressFormat.PNG,100,stream);
         byte[] imageBytes = stream.toByteArray();
         photo.recycle();
 //------------------------------GETTING CURRENT DATE------------------------------------------------
