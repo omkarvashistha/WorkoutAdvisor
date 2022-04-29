@@ -4,8 +4,8 @@ don't need any gym equipment as I have included mostly calestenics exercises but
 ## FEATURES
 1-Exercises for each body part  
 2-Beautiful UI  
-3-Proper Warmpu Exercises (COMING SOON)  
-4-Progress Viewer - You can save your progress photos to check your progress (COMING SOON)  
+3-Proper Warmup Exercises (COMING SOON)  
+4-Progress Viewer - You can save your progress photos to check your progress  
 ## PHOTOS OF UI
 ![Screenshot_2022_0404_221905](https://user-images.githubusercontent.com/33715591/161594821-0f2c4e61-b104-47ad-b33a-369683cd9a19.jpg)
 ## VIDEO OF APP
